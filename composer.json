@@ -1,0 +1,29 @@
+{
+    "name": "boatrace-sakura/calculator",
+    "description": "The Boatrace Sakura Calculator.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "shimomo",
+            "email": "developer@shimomo.net"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "php-di/php-di": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Boatrace\\Sakura\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Boatrace\\Sakura\\Tests\\": "tests/"
+        }
+    }
+}
