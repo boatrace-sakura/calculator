@@ -37,9 +37,9 @@ class Calculator
     /**
      * @param  string  $name
      * @param  array   $arguments
-     * @return mixed
+     * @return float
      */
-    public function __call(string $name, array $arguments)
+    public function __call(string $name, array $arguments): float
     {
         return call_user_func_array([$this->calculator, $name], $arguments);
     }
@@ -47,9 +47,9 @@ class Calculator
     /**
      * @param  string  $name
      * @param  array   $arguments
-     * @return mixed
+     * @return float
      */
-    public static function __callStatic(string $name, array $arguments)
+    public static function __callStatic(string $name, array $arguments): float
     {
         return call_user_func_array([self::getInstance(), $name], $arguments);
     }
