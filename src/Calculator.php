@@ -70,9 +70,7 @@ class Calculator
     public static function getContainer(): Container
     {
         $builder = new ContainerBuilder;
-
         $builder->addDefinitions(__DIR__ . '/../config/definitions.php');
-
         return $builder->build();
     }
 }
