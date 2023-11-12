@@ -7,8 +7,8 @@
 [![License](https://poser.pugx.org/boatrace-sakura/calculator/license)](https://packagist.org/packages/boatrace-sakura/calculator)
 
 ## Installation
-```
-$ composer require boatrace-sakura/calculator
+```bash
+composer require boatrace-sakura/calculator
 ```
 
 ## Usage
