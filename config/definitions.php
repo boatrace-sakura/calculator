@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'Calculator' => \DI\create('\Boatrace\Sakura\Calculator')->constructor(
         \DI\get('MainCalculator')
