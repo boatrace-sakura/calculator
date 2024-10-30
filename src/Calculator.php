@@ -13,11 +13,6 @@ use DI\ContainerBuilder;
 class Calculator
 {
     /**
-     * @var \Boatrace\Sakura\MainCalculator
-     */
-    protected $calculator;
-
-    /**
      * @var \Boatrace\Sakura\Calculator
      */
     protected static $instance;
@@ -31,10 +26,7 @@ class Calculator
      * @param  \Boatrace\Sakura\MainCalculator  $calculator
      * @return void
      */
-    public function __construct(MainCalculator $calculator)
-    {
-        $this->calculator = $calculator;
-    }
+    public function __construct(protected MainCalculator $calculator){}
 
     /**
      * @param  string  $name
